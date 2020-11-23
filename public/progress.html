@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+        <title>Progress Table</title>
+
+        <script>
+            $.ajax({
+                url: '/jsonData',
+                complete: function(data) {
+                    alert(data);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://csusbwebappdev.web.app/">CSE 4050</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://csusbwebappdev.web.app/progress.html">Progress Table</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://csusbwebappdev.web.app/js_prac.html">JavaScript Practice</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8000/jsonData">JSON Data</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="login" onclick="location.href = 'https://csusbwebappdev.web.app/login.html';">Login</button>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <p id="para">I will keep a list of the assignments left to do here to keep track of progess.</p>
+            <table id="productSizes" class="table">
+                <tr class="d-flex">
+                    <th class="col-1">Assignments</th>
+                    <th class="col-1">Finished?</th>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">git</td>
+                    <td class="col-1" id="yes">Yes</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">HTML</td>
+                    <td class="col-1" id="yes">Yes</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">CSS</td>
+                    <td class="col-1" id="yes">Yes</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">Javascript</td>
+                    <td class="col-1" id="yes">Yes</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">JSON</td>
+                    <td class="col-1" id="yes">Yes</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">Firebase Hosting</td>
+                    <td class="col-1" id="no">No</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">Firebase Authentication</td>
+                    <td class="col-1" id="no">No</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">Cloud Firestore</td>
+                    <td class="col-1" id="no">No</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">Web App 1</td>
+                    <td class="col-1" id="no">No</td>
+                </tr>
+                <tr class="d-flex">
+                    <td class="col-1">Web App 2</td>
+                    <td class="col-1" id="no">No</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+
+    </body>
+    <footer class="page-footer fixed-bottom">
+
+        <!-- Copyright -->
+        <div class="footer">
+            <a href="https://github.com/wmentzer" class="fa fa-github"><img src="./media/GitHub.png"></a>
+            <p>Created by Will Mentzer</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</html>

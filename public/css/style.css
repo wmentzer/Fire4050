@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(180, 179, 179);
+}
+
+hr {
+    border: 5px solid rgb(0, 0, 0);
+}
+
+table {
+    margin-left: 100px;
+    border-collapse: collapse;
+}
+
+th {
+    margin: 10px;
+    width: 100px;
+    border: 1px solid black;
+    font-size: large;
+    text-align: center;
+    padding: 3px;
+}
+
+td {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 3px;
+}
+
+.heading {
+    text-align: center;
+    text-shadow: 5px 5px 10px #444;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+#para {
+    margin-left: 20px;
+}
+
+#yes {
+    color: Green;
+    font-weight: bold;
+}
+
+#no {
+    color: red;
+    font-weight: bold;
+}

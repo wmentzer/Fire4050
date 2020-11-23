@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/stopwatch.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/tipcalc.css">
+        <script type="text/javascript" src="scripts/timer.js"></script>
+        <script type="text/javascript" src="scripts/tipcalc.js"></script>
+
+        <title>JavaScript Practice</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="https://csusbwebappdev.web.app/">CSE 4050</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://csusbwebappdev.web.app/progress.html">Progress Table</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://csusbwebappdev.web.app/js_prac.html">JavaScript Practice</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8000/jsonData">JSON Data</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="login" onclick="location.href = 'https://csusbwebappdev.web.app/login.html';">Login</button>
+            </div>
+        </nav>
+
+        <div class="stopwatch">
+
+            <div id="display">
+                <span id="hrs">00</span><span>:</span><span id="mins">00</span><span>:</span><span id="secs">00</span>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="startTimer()">Start</button>
+                <button id="stop" onclick="stopTimer()">Stop</button>
+                <button id="reset" onclick="resetTimer()">Reset</button>
+            </div>
+        </div>
+
+        <div class="tipcalc">
+            <h1>Tip Calculator</h1>
+            <div class="calculator">
+                <form>
+                    <p>How much is the bill total?</p>
+                        $ <input id="bill" type="text" placeholder="Bill Amount">
+                    <p>How was your service?</p>
+                        <select id="serviceQual">
+                            <option disabled selected value="0">-- Choose an Option --</option>
+                            <option value="0.25">25&#37; &#45; Outstanding</option>
+                            <option value="0.2">20&#37; &#45; Great</option>
+                            <option value="0.15">15&#37; &#45; Good</option>
+                            <option value="0.1">10&#37; &#45; It was OK</option>
+                            <option value="0.05">5&#37; &#45; Not great</option>
+                        </select>
+                </form>
+                <p>How many people are splitting the bill?</p>
+                <input id="people" type="text" placeholder="Number of people">
+                <br>
+                <button type="button" id="calculate" onclick="calculateTip()">Calculate!</button>
+            </div>
+            <div id="totalTip">
+                <sup>$</sup><span id="tip">0.00</span>
+                <small id="each"></small>
+            </div>
+        </div>
+
+        <div class="schedule">
+            <h1>Weekly Schedule</h1>
+            <div class="container">
+                <table class="table table-stripped">
+                    <tbody id="data">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js"></script>
+    </body>
+    
+    <footer class="page-footer fixed-bottom">
+        <div class="footer">
+            <a href="https://github.com/wmentzer" class="fa fa-github"><img src="../media/GitHub.png"></a>
+            <p>Created by Will Mentzer</p>
+        </div>
+    </footer>
+</html>

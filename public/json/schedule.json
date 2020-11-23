@@ -1,0 +1,35 @@
+{
+    "Schedule": {
+        "Monday": {
+            "Classes": [
+                "CSE 4560",
+                "CSE 4050",
+                "CSE 4560 Lab",
+                "CSE 5000"
+            ]
+        },
+        "Tuesday": {
+            "Classes": [
+                "CSE 5700"
+            ]
+        },
+        "Wednesday": {
+            "Classes": [
+                "CSE 4560",
+                "CSE 4050",
+                "CSE 4560 Lab",
+                "CSE 5000"
+            ]
+        },
+        "Thursday": {
+            "Classes": [
+                "CSE 5700"
+            ]
+        },
+        "Friday": {
+            "Classes": [
+                "CSE 4880"
+            ]
+        }
+    }
+}
