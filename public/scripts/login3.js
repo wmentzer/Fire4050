@@ -1,11 +1,11 @@
 (function() {
   
   // Get elements
-  const txtEmail = document.querySelector('email_field');
-  const txtPass = document.querySelector('password_field');
-  const btnLogin = document.querySelector('btnLogin');
-  const btnSubmit = document.querySelector('btnSignUp');
-  const btnLogout = document.querySelector('btnLogout');
+  const txtEmail = document.getElementById('email_field');
+  const txtPass = document.getElementById('password_field');
+  const btnLogin = document.getElementById('btnLogin');
+  const btnSubmit = document.getElementById('btnSignUp');
+  const btnLogout = document.getElementById('btnLogout');
 
   // Add login events
   btnLogin.addEventListener('click', e => {
