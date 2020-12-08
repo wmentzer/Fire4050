@@ -48,10 +48,12 @@ window.onload = function() {
       logout.style.display = "block";
       success.style.display = "block";
       login.style.display = "none";
+      signup.style.display = "none";
     } else {
       success.style.display = "none";
       logout.style.display = "none";
       login.style.display = "block";
+      signup.style.display = "block";
     }
   });
 }
