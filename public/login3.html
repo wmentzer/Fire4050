@@ -41,24 +41,25 @@
         </nav>
 
         <br>
-        
-        <div class="main-div">
-            <h3>LOGIN 4</h3>
-            <input type="email" id="email_field" placeholder="Email"/>
-            <input type="password" id="password_field" placeholder="Password"/>
 
-            <button id="btnLogin" class="btn btn-action">Login</button>
+        <div class="main-div">
+            <h3>LOGIN 8</h3>
+        
+            <input type="email" id="txt_email" placeholder="Email"/>
+            <input type="password" id="txt_pass" placeholder="Password"/>
+
+            <button id="login" class="btn btn-primary">Login</button>
 
             <button id="btnSignUp" class="btn btn-secondary">Sign Up</button>
 
-            <button id="btnLogout" class="btn btn-action hide">Logout</button>
+            <button id="btnLogout" class="btn btn-primary" style="display:none;">Logout</button>
+        </div>
+
+        <div id="logged-in" style="display:none;">
+            <h3 id="successLogin">SUCCESSFUL LOGIN</h3>
         </div>
 
         <script src="scripts/login3.js"></script>
-
-
-
-
 
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="/__/firebase/7.23.0/firebase-app.js"></script>
@@ -66,14 +67,13 @@
         <!-- TODO: Add SDKs for Firebase products that you want to use
              https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
 
         <!-- Initialize Firebase -->
         <script src="/__/firebase/init.js"></script>
 
     </body>
 
-
-    
     <footer class="page-footer fixed-bottom">
         <!-- Copyright -->
         <div class="footer">
